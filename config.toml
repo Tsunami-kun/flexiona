@@ -1,0 +1,14 @@
+baseURL = "https://flexiona.example.com/"
+languageCode = "zh-cn"
+title = "flexiona | 流域"
+theme = "PaperMod"
+
+# Enable LaTeX support
+[params]
+  math = true
+  description = "Academic knowledge sharing and exploration"
+
+[params.homeInfoParams]
+  Title = "Welcome to 流域 (flexiona)"
+  Content = "A modern, intelligent academic blog for knowledge sharing and exploration."
+

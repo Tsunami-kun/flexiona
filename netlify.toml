@@ -1,0 +1,16 @@
+[build]
+  publish = "public"
+  command = "cd scripts && ./setup.sh && cd .. && hugo --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.115.4"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.deploy-preview]
+  command = "cd scripts && ./setup.sh && cd .. && hugo --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "cd scripts && ./setup.sh && cd .. && hugo --minify -b $DEPLOY_PRIME_URL"

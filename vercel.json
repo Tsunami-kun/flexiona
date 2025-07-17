@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "buildCommand": "cd scripts && ./setup.sh && cd .. && hugo --minify",
+    "outputDirectory": "public",
+    "framework": "hugo",
+    "git": {
+        "deploymentEnabled": {
+            "main": true
+        }
+    }
+}
